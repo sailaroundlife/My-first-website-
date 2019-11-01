@@ -1,11 +1,448 @@
 <DOCTYPE <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head> ==$0
+    <title> Sailaroundlife</title>
+    <meta  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
-    <title> First site </title>
-     <link ref="stylesheet" type="text/css" href="css/styles.css">
+     <link rel="stylesheet" type="text/css" href="css/reset.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/cycle.css">
+      <script type="text/javascript" src="js/jquery-1.12.3.min.js">
+      </script>
   </head>
-  <body>
+  <body <body style="overflow: auto;">
+		<div class="container">
+			<section class="sidebar">
+				<a href="menu.asp" title="Home Page">
+          <img src="img/home_a.gif" class="logo">
+        </a>
+				<nav>
+		            <ul class="menu" id="menu1">
+		                <li>
+                      <a href="out.asp">
+                      <img class="nav-o" src="img/o_a_n.gif">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="in.asp">
+                      <img class="nav-i" src="img/i_a_n.gif">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.asp">
+                      <img class="nav-q2" src="img/q2_a_n.gif">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="shows.asp">
+                      <img class="nav-sh" src="img/sh_a_r.gif">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="window.open('http://walledoffhotel.com/');">
+                      <img class="nav-ho" src="img/ho_a_n.gif">
+                    </a>
+                  </li>
+		            </ul>
+	            </nav>
+			</section>
+			<section class="content">
+	            <div class="shows">
+	                <p style="font-weight:600; font-size:18px; text-align:center;">SPECIAL OFFERS </p>
+	                <p style="margin-top:20px; margin-bottom:20px; font-size:14px;">Members of our website the public should be aware there has been a recent spate of Banksy exhibitions none of which are consensual. They‘ve been organised entirely without the artist's knowledge or involvement. Please treat them accordingly.</p>
+	                <p><img src="img/shows/fake-show.jpg" alt=""></p>
+	                <p>&nbsp;</p>
+	                 <p class="table-head" style="width:100%; text-align: center;">FAKE</p>
+	                <table style="width:100%;">
+						<tbody>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/sydney.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Sydney<br>$27.50
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/cluj.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Cluj-Napoca<br>$9.50
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/bucharest.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Bucharest<br>$9.50
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/paris_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Paris<br>$15
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/malaga_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Malaga<br>$10
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/lisbon_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Lisbon<br>$15
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/sicily_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Sicily<br>$12
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/goteborg_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Gothenburg<br>$20
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/madrid_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Madrid<br>$7
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/athens_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Athens<br>$14
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/milan2_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Milan<br>$19
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/miami_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Miami<br>$36 - $49
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/amsterdam_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Amsterdam<br>$15
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/brussels_thumb.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Brussels<br>$14
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/toronto_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Toronto<br>$35
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/moscow_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Moscow<br>$7
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/berlin_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Berlin<br>$14
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/melbourne_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Melbourne<br>$30
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/instanbul_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Istanbul<br>$6
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/antwerp_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Antwerp<br>$20
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tbl-space-l">&nbsp;</td>
+								<td>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/auckland_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Auckland<br>$23
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+									<div class="tbl-cell">
+										<table style="width:100%;">
+					                		<tbody>
+						                		<tr>
+						                			<td class="tbl-thumb">
+						                				<img src="img/shows/telaviv_thumb_b.jpg">
+						                			</td>
+						                			<td class="table-label">
+						                				Tel Aviv<br>$24
+						                			</td>
+						                		</tr>
+						                	</tbody>
+						                </table>
+									</div>
+								</td>
+								<td class="tbl-space-r">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+	            </div>
+			</section>
+			<nav class="r-menu">
+				<a href="#"><img src="img/nav-icon2.png" id="menu-icon"></a>
+	            <ul id="nav">
+	                <li><a href="out.asp"><img class="nav-o" src="img/o_a_n.gif"></a></li><li><a href="in.asp"><img class="nav-i" src="img/i_a_n.gif"></a></li><li><a href="faq.asp"><img class="nav-q2" src="img/q2_a_n.gif"></a></li><li><a href="shows.asp"><img class="nav-sh" src="img/sh_a_r.gif"></a></li><li><a href="#" onclick="window.open('http://walledoffhotel.com/');"><img class="nav-ho" src="img/ho_a_n.gif"></a></li>
+	            </ul>
+			</nav>
+		</div>
+	    <script src="js/scripts.js"></script>
+
+</body>
     <h1>Hello First website</h1>
     <h2>Welcome to my website</h2>
   <img src="duck.jpg" height=122px>
