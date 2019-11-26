@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+* {
+  margin: 100em;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Alata', sans-serif;
+  background-color: #212121;
+  color: #00FF00;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #FF00FF;
+  font-weight: bold;
+}
+.container p span.TypeCursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.TypeCursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+@media (max-width:750px) {
+  .container p {
+    font-size: 2rem;
+}
+}
+
+header {
+  padding: 20px 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+[class^="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+body {
+  background: #e6e6e6;
+}
+#social-sidebar {
+	left: 0;
+	position: fixed;
+	top: 30%;
+}
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+
+#social-sidebar a {
+	background: rgba(0, 0, 3, .7);
+	color: #fff;
+    text-decoration: none;
+	display: block;
+	height: 50px;
+	width: 50px;
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+    cursor: pointer;
+}
+#social-sidebar a:hover span {
+	left: 120%;
+	opacity: 1;
+}
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+	border-radius: 3px;
+	line-height: 24px;
+	left: -100%;
+	margin-top: -16px;
+	opacity: 0;
+	padding: 4px 8px;
+	position: absolute;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+	z-index: -1;
+}
+
+#social-sidebar a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+  width: 8px;
+	left: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+
+#social-sidebar a[class*="dribbble"]:hover,
+#social-sidebar a[class*="dribbble"] span,
+#social-sidebar a[class*="dribbble"] span:before {background: #ea4c89;}
+
+#social-sidebar a[class*="dropbox"]:hover,
+#social-sidebar a[class*="dropbox"] span,
+#social-sidebar a[class*="dropbox"] span:before {background: #8DC5F2;}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+#social-sidebar a[class*="evernote"]:hover,
+#social-sidebar a[class*="evernote"] span,
+#social-sidebar a[class*="evernote"] span:before {background: #6BB130;}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 5em;
+  perspective: 100em;
+}
+.carousel {
+  position: relative;
+  width: 15em;
+  height: 15em;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.carousel[data-slide="1"] {
+  transform: rotateY(0deg);
+}
+.carousel[data-slide="2"] {
+  transform: rotateY(-90deg);
+}
+.carousel[data-slide="3"] {
+  transform: rotateY(-180deg);
+}
+.carousel[data-slide="4"] {
+  transform: rotateY(-270deg);
+}
+.slides {
+  position: absolute;
+  width: 16em;
+  height: 16em;
+  background: grey;
+}
+.slides img {
+  width: 100%;
+}
+.back, .slides:nth-child(3) {
+  transform: translateZ(-7.5em) rotateY(180deg);
+}
+.right, .slides:nth-child(2) {
+  transform: rotateY(-270deg) translateX(7.5em);
+  transform-origin: top right;
+}
+.left, .slides:nth-child(4) {
+  transform: rotateY(270deg) translateX(-7.5em);
+  transform-origin: center left;
+}
+.front, .slides:nth-child(1) {
+  transform: translateZ(7.5em);
+}
+.next, .prev {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 6em;
+  margin-top: -2.5em;
+  border-radius: 3px;
+  background: #212121;
+  text-align: center;
+  line-height: 3;
+  letter-spacing: 5px;
+  color: yellow;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.prev:hover {
+  background:  #e60023;
+}
+.prev {
+  left: 0;
+}
+.next:hover {
+  background:  #e60023;
+}
+.cf:before, .slides:before,
+.cf:after,
+.slides:after {
+  content: " ";
+  display: table;
+}
+.cf:after, .slides:after {
+  clear: both;
+}
+.cf, .slides {
+  *zoom: 1;
+}
+header {
+  padding: 20px 0;
+}
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 500;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('aaron-burden-GVnUVP8cs1o-unsplash.jpg');
+  background-repeat:no-repeat;
+  background-size: cover
+  color: #ffffff;
+  height: 100%;
+
+
+}
+
+
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #2a70e0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.portrait {
+  width:  350px;
+  height: 300px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+footer {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+footer .col-sm-6 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
